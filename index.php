@@ -31,7 +31,7 @@ foreach (glob('./mazes/*.txt') as $file) {
         return in_array($tile, $path, true) && !in_array($tile->value, ['S', 'T'])
             ? '.'
             : $tile->value
-            ;
+        ;
     });
 
     printf("%s:\n%s\nin: %.5fs\n\n", $file, $mazeStrWithPath, $tEnd - $tStart);
